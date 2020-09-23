@@ -1,0 +1,819 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.burger-container{
+    /*   width:100%; */
+    /*   height:300px; */
+    position: relative;
+    cursor: pointer;
+    }
+
+    .burger{
+        color: rgb(235, 219, 219);
+        width: 25px;
+        height: 1px;
+        top: 49px;
+        margin-left:20px;
+        position: relative;
+        background: black;
+      }
+      .burger::before{
+        content:'';      
+        width: 25px;
+        height: 1px;
+        top: -8px;
+        margin-left:0px;
+        position: absolute;
+        background: black;
+      }
+      
+      .burger::after{
+        content:'';      
+        width: 25px;
+        height: 1px;
+        top: 8px;
+        margin-left:0px;
+        position: absolute;
+        background: black;
+      }
+
+      .shopping-cart{
+        margin-top: 34px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .checkbox-sign-up{
+        width: 12px;
+        height: 12px;
+    /* background: gray; */
+        border: 1px solid;
+        /* margin-left: 14px; */
+    }
+
+    .navigation-sign-up-desktop{
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+
+    /* .sign-up-input:focus{
+        font-size: .7rem;
+        border-bottom: 2px solid black;
+        transition: ease .2s;
+    } */
+
+    .register-email-sign,
+    .register-password,
+    .repeat-password,
+    .name,
+    .label-pincode,
+    .address,
+    .optional,
+    .locality,
+    .city{
+        position: relative;
+        width: 100%;
+        height: 72px;
+    }
+
+    .label-email{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 51px; */
+    pointer-events: none;
+    bottom: 0;
+    left: 0;
+    }
+    
+    .content-email{
+        position: absolute;
+        bottom: 5px;
+        left: 0px;
+        transition: all 0.3s ease;
+    }
+    .sign-up-input:focus + .label-email .content-email,
+    .sign-up-input:valid + .label-email .content-email {
+        font-size: .7rem;
+        transform: translateY(-150%);
+    }
+
+    .sign-up-input::placeholder{
+            /* margin-top: -5px; */
+    }
+
+    .register-password{
+        position: relative;
+        width: 100%;
+        height: 50px;
+    }
+
+    .label-password{
+        width: 100%;
+        position: absolute;
+        bottom: -25px;
+        left: 1px;
+        pointer-events: none;
+    }
+
+    .content-password{
+            position: absolute;
+            bottom: 5px;
+            left: 0px;
+            transition: all 0.3s ease;
+    }
+
+
+    .sign-up-input:focus + .label-password .content-password,
+    .sign-up-input:valid + .label-password .content-password {
+        font-size: .7rem;
+        transform: translateY(-150%);
+    }
+
+    .label-repeat-password{
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+        /* left: 320px; */
+        right: 0px;
+        pointer-events: none;
+    }
+
+    .content-repeat-password{
+            position: absolute;
+            bottom: 5px;
+            left: 0px;
+            transition: all 0.3s ease;
+    }
+
+    .sign-up-input:focus + .label-repeat-password .content-repeat-password,
+    .sign-up-input:valid + .label-reapeat-password .content-repeat-password {
+        font-size: .7rem;
+        transform: translateY(-150%);
+    }
+
+    .label-name{
+        width: 100%;
+        position: absolute;
+        bottom: 67px;
+        right: 0px;
+    }
+
+    .content-name{
+            position: absolute;
+            bottom: -67px;
+            /* left: 0px; */
+            transition: all 0.3s ease;
+    }
+
+    .sign-up-input:focus + .label-name .content-name,
+    .sign-up-input:valid + .label-name .content-name {
+        font-size: .7rem;
+        transform: translateY(-150%);
+    }
+
+    .label-pincode{
+        /* width: 100%;
+        position: absolute; */
+        bottom: 2px;
+        right: 0px;
+    }
+
+    .content-pincode{
+            position: absolute;
+            bottom: -9px;
+            /* left: 0px; */
+            right: 204px;
+            transition: all 0.3s ease;
+    }
+
+    .sign-up-input:focus + .label-pincode .content-pincode,
+    .sign-up-input:valid + .label-pincode .content-pincode {
+        font-size: .7rem;
+        transform: translateY(-150%);
+    }
+
+
+    .label-address{
+        /* width: 100%;
+        position: absolute; */
+        /* bottom: 67px;
+        right: 0px; */
+        pointer-events: none;
+    }
+
+    .content-address{
+        position: absolute;
+        bottom: 0px;
+        /* left: 327px; */
+        right: 321px;
+        transition: all 0.3s ease;
+    }
+
+    .sign-up-input:focus + .label-address .content-address,
+    .sign-up-input:valid + .label-address .content-address {
+        font-size: .7rem;
+        transform: translateY(-150%);
+    }
+
+    .label-optional{
+        /* width: 100%;
+        position: absolute; */
+        /* bottom: 67px;
+        right: 0px; */
+        pointer-events: none;
+    }
+
+    .content-optional{
+            position: absolute;
+            bottom: 0px;
+            /* left: 320px; */
+            right: 312px;
+            transition: all 0.3s ease;
+    }
+
+    .sign-up-input:focus + .label-optional .content-optional,
+    .sign-up-input:valid + .label-optional .content-optional {
+        font-size: .7rem;
+        transform: translateY(-150%);
+    }
+
+    .label-locality{
+        /* width: 100%;
+        position: absolute; */
+        /* bottom: 67px;
+        right: 0px; */
+        pointer-events: none;
+    }
+
+    .content-locality{
+        position: absolute;
+        bottom: 0px;
+        /* left: 325px; */
+        right: 320px;
+        transition: all 0.3s ease;
+    }
+
+    .sign-up-input:focus + .label-locality .content-locality,
+    .sign-up-input:valid + .label-locality .content-locality {
+        font-size: .7rem;
+        transform: translateY(-150%);
+    }
+
+    .label-city{
+        /* width: 100%;
+        position: absolute; */
+        /* bottom: 67px;
+        right: 0px; */
+        pointer-events: none;
+    }
+
+    .content-city{
+            position: absolute;
+            bottom: 4px;
+            /* left: 320px; */
+            right: 347px;
+            transition: all 0.3s ease;
+    }
+
+    .sign-up-input:focus + .label-city .content-city,
+    .sign-up-input:valid + .label-city .content-city {
+        font-size: .7rem;
+        transform: translateY(-150%);
+    }
+
+    .label-select{
+        /* width: 100%;
+        position: absolute; */
+        /* bottom: 67px;
+        right: 0px; */
+        pointer-events: none;
+    }
+
+    .content-select{
+            position: absolute;
+            bottom: -108px;
+            left: 326px;
+            /* right: 247px; */
+            transition: all 0.3s ease;
+    }
+
+    .sign-up-input:focus + .label-select .content-select,
+    .sign-up-input:valid + .label-select .content-select {
+        font-size: .7rem;
+        transform: translateY(-150%);
+    }
+
+    .label-telephone{
+        /* width: 100%;
+        position: absolute; */
+        /* bottom: 67px;
+        right: 0px; */
+        pointer-events: none;
+    }
+
+    .content-telephone{
+        position: absolute;
+        bottom: -63px;
+        /* left: 482px; */
+        right: 299px;
+        transition: all 0.3s ease;
+    }
+
+    .sign-up-input:focus + .label-telephone .content-telephone,
+    .sign-up-input:valid + .label-telephone .content-telephone {
+        font-size: .7rem;
+        transform: translateY(-150%);
+    }
+
+
+    .log-in-logo-desktop{
+        font-size: 5rem;
+        margin-left: 59px;
+        margin-top: 6px;
+    }
+
+    .help-and-cart-container{
+        display: flex;
+        margin-right: 25px;
+    }
+
+    .help-log-in-desktop{
+        margin-right: 17px;
+        margin-top: 42px;
+        font-size: .7rem;
+    }
+
+    .shopping-cart-image-sign-up{
+        width: 24px;
+    }
+
+    /* main section part */
+
+    .main-sign-up-desktop-container{
+        margin-top: 98px;
+    }
+
+    .details-registration{
+        padding-left: 30%;
+        margin-bottom: 200px;
+    }
+
+    .personal-circle{
+        width: 18px;
+        height: 18px;
+        background: white;
+        border-radius: 50%;
+        margin: 10px;
+        border: 3px solid black;
+    }
+    .personal-circle-background{
+        display:none;
+        position: absolute;
+        top: 1px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        color: black;
+    }
+    .personal-circle:hover{
+        /* background: black; */
+    }
+
+    .personal-registaration,
+    .company-registaration,
+    .input-circle-registration{
+        display: flex;
+    }
+    .details-registration-heading{
+        /* margin-left: 30%; */
+        font-size: 1.9rem;
+        text-transform: capitalize;
+        margin-top: 115px;
+    }
+
+    .input-circle-registration{
+        margin-top: 37px;
+    }
+
+    .circle-definition-sign-up{
+        margin-top:14px;
+    }
+    
+    .company-registaration{
+        margin-left: 28px;
+    }
+
+    .sign-up-input{
+        width: 70%;
+        height: 32px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 28px;
+        border-bottom: 2px solid gray;
+        outline: none;
+        margin-top: 40px;
+        /* margin-right: 55px; */
+        font-size: 1rem;
+    }
+
+    .sign-up-input-email{
+        width: 35%;
+        height: 32px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 28px;
+        border-bottom: 2px solid gray;
+        outline: none;
+        margin-top: 40px;
+        margin-right: 55px;
+        font-size: 1rem;
+    }
+
+
+    .create-account-desktop{
+        width: 290px;
+        height: 40px;
+        color: white;
+        background: black;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+    .create-account-desktop:hover{
+        background: rgba(0,0,0,.8);
+    }
+
+    .checkbox-definition{
+        font-size: .8rem;
+    /* font-weight: 200; */
+    text-transform: none;
+    margin-left: 15px;
+    margin-top: 0;
+    }
+    .checkbox-container,
+    .checkbox-privacy{
+        display: flex;
+    }
+
+    .checkbox-email{
+        margin-top: 36px;
+        margin-bottom: 45px;
+    }
+
+   
+
+
+
+    /* footer part */
+
+    .sign-up-desktop{
+        background: white;
+    }
+
+    .main-footer-desktop{
+        display: flex;
+        margin: 19px 0% 41px 12%;
+    }
+
+    .footer-heading{
+        font-size: 1.2rem;
+        /* text-align: center; */
+        margin-left: 80px;
+    }
+    .help-list,
+    .follow-us-list,
+    .company-list,
+    .company-list{
+        font-size: .9rem;
+    }
+
+    .help-list-item,
+    .follow-us-list-item,
+    .company-list-item,
+    .company-list{
+        margin-bottom: 10px;
+    }
+
+    .secondary-footer-desktop{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .footer-sign-up{
+        width: 90%;
+        background: gray;
+    }
+
+    .country-sign-up{
+        margin-left: 8%;
+    }
+
+    .language-and-copyright-sign-up{
+        margin-right: 43px;
+    }
+
+    .sign-up-desktop-language{
+        margin-left: 109px;
+        margin-bottom: 24px;
+    }
+
+    #country{
+        width: 325px;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid gray;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .password-container,
+    .name-container,
+    .address-container,
+    .lacality-container,
+    .telephone-container,
+    .gstin-company-container{
+        display: flex;  
+        margin-top: 30px;
+    }
+/* 
+    .optional,
+    .city{
+        padding-left: 131px;
+    }    */
+   
+    .telephone{
+        /* padding-left: -9px; */
+        margin-left: 390px;
+        width: 70%;
+    }
+    .countries-sign-up{
+        width: 50%;
+        /* background: red; */
+        position: absolute;
+        margin-top: 47px;
+    }
+
+    /*    form sign up */
+
+    .form-sign-up{
+        /* background: pink; */
+        margin-top: 30px;
+        /* position: relative;
+        z-index: -1; */
+        display: block;
+        /* background: red; */
+    }
+
+    .form-sign-up-company{
+        display: none;
+        /* background: pink; */
+    }
+
+    .name-pincode-container,
+    .address-optional-container,
+    .locality-city-container,
+    .state-region-container{
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .input-simailar{
+        margin-top: 30px;
+    }
+
+    label{
+        position: absolute;
+        pointer-events: none;
+        font-size: .9rem;
+        color: gray;
+        width: 20%;
+        /* z-index: 1; */
+    }
+
+    .input-sign-up-email{
+        width: 325px;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid gray;
+        pointer-events: all;
+        outline: none;
+    }
+    
+    .input-sign-up{
+        width: 325px;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid gray;
+        outline: none;
+    }
+
+    /* .input-sign-up:invalid{
+        border-bottom: 1px solid red;
+    } */
+
+   
+    
+    .repeat-password-container,
+    .company-container,
+    .pincode-container,
+    .optional-container,
+    .city-container,
+    .telephone-number{
+        margin-left: 70px;
+    }
+
+    .form-control-region{
+        width: 325px;
+        height: 30px;
+    }
+
+    .region-sign-up{
+        margin-left: 71px;
+    }
+    .email-span,
+    .password-span,
+    .repeat-password-span,
+    .gstin-span,
+    .company-span,
+    .name-span,
+    .pincode-span,
+    .address-span,
+    .optional-span,
+    .locality-span,
+    .city-span,
+    .telephone-span,
+    .country-code-span{
+        margin-top: 20px;
+        position: absolute;
+        transition: all 0.3s ease;
+    }
+
+    .input-sign-up:focus + label .name-span {
+        font-size: 0.5rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+
+    .country-label,
+    .region-label{
+        font-size: .7rem;
+        margin-top: -14px;
+    }
+
+    .state-region-container{
+        margin-top: 60px;
+    }
+
+    .input-sign-up-telephone-code{
+        width: 50px;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid gray;
+        outline: none;
+    }
+
+    .input-sign-up-telephone-number{
+        width: 250px;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid gray;
+        outline: none;
+    }
+
+    .telephone-number{
+        margin-left: 30px;
+    }
+    .email-span,   
+    .name-span,
+    .gstin-span,
+    .company-span,
+    .password-span,
+    .locality-span,
+    .address-span,
+    .repeat-password-span,
+    .pincode-span,
+    .optional-span,
+    .city-span,
+    .country-label,    
+    .region-label{
+        margin-left: -325px;
+    }
+
+    .email-container{
+        margin-top: 50px;
+    }
+
+    .email-span{
+        position: absolute;
+        margin-top: 20px;
+    }
+
+    .country-code-span{
+        margin-left: -50px;
+    }
+    .telephone-span{
+        margin-left: -250px;
+    }
+
+    .input-sign-up-email:focus + label .email-span {
+        font-size: 0.6rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+
+    .input-sign-up:focus + label .password-span {
+        font-size: 0.5rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+
+    .input-sign-up:focus + label .locality-span {
+        font-size: 0.5rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+
+    .input-sign-up:focus + label .address-span {
+        font-size: 0.5rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+
+    .input-sign-up:focus + label .repeat-password-span {
+        font-size: 0.5rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+
+    .input-sign-up:focus + label .pincode-span {
+        font-size: 0.5rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+
+    .input-sign-up:focus + label .optional-span {
+        font-size: 0.5rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+
+    .input-sign-up:focus + label .city-span {
+        font-size: 0.5rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+
+    .input-sign-up:focus + label .regional-span {
+        font-size: 0.5rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+    .input-sign-up-telephone-number:focus + label .telephone-span {
+        font-size: 0.5rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+
+    .input-sign-up-telephone-code:focus + label .country-code-span {
+        font-size: 0.5rem;
+        transform: translateY(-150%);
+        /* padding-top: 5px; */
+    }
+
+    .gstin-company-container{
+        /* display: none; */
+    }
+    
+    .active{
+        display: flex;
+    }
+
+    .disable{
+        display: none;
+    }

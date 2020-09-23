@@ -1,0 +1,1 @@
+console.log('inside register.js');

@@ -1,0 +1,27 @@
+{
+    "shoes":[
+         {
+             "id": 1,
+             "name": "white chunky shoes",
+             "model_no":"WHITE - 2407/520",
+             "detail": "flat leather sandals with pearls",
+             "more_detail": " White lace-up shoes. Facing with five pairs of eyelets. Chunky white track sole.Rounded toe with raised embossing on the toecap. Urban - sporty look.",
+             "price": 5000,
+             "size": "",
+             "imgName": "shoe_one.jpg",
+             "selected": false
+
+         }
+    ],
+    "sizes":[
+        {
+            "five":"UK 5(EUR39)",
+            "six":"UK 6(EUR40)",
+            "seven":"UK 7(EUR41)",
+            "eight":"UK 8(EUR42)",
+            "nine":"UK 9(EUR43)",
+            "ten":"UK 10(EUR44)",
+            "eleven":"UK 11 (EUR45)"
+        }
+     ]
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Cart Main |</title>
+    <script src="https://js.stripe.com/v3/" >   </script>
+    <script>
+        let public_key = '<%= stripe_public_key %>'
+        const stripe = Stripe('pk_test_51HBPM7BnAtNlSuT1IO6WMwBOgUx32O4OEjdNaDBvxtz4T8Jsuc9n8AmwsCsl6VFhj5VeX7eu3pskD6B7O41kovk6002P9x5LFe')
+       
+    </script>
+    <script src="/public/js/cart-main.js" defer></script>
+    <link rel="stylesheet" href="/public/styles/cart-main.css">
+    <link rel="stylesheet" href="/public/styles/saving-changes-popup.css">
+</head>
+<body>
+    <!-- <h1>Yupee</h1> -->
+
+    <div class="navigation">
+       <a href="index.html" class="home-logo"> <div class="logo-cart">zara</div></a>
+        <div class="help-logIn-container">
+        <div class="log-in-main">log in</div>
+        <div class="help-cart">help</div>
+        </div>
+    </div>
+
+    <div class="chatbot-cart">
+        <p class="chatbot-text">chat</p>
+    </div>
+
+    <div class="payment-summary">
+
+        <button class="goback-button">go back</button>
+        <div class="total-payment-summary">total <span class="total-pay">₹ 23,750.00</span>
+        <p class="tax-text">including GST</p></div>
+        <button class="continue-button">continue</button>
+    </div>
+
+    <div class="main-segment">
+        
+        <h1 class="main-headline">shopping bag</h1>
+        <div class="total-items-count">
+            <span class="count-text">5 items</span>
+        </div>
+
+        <div class="widget-contaier">
+
+         <!-- <div class="items-widget">
+            <img src="/public/images/catalogue/shoe_one.jpg" alt="" class="item-image">
+            <a href="#" class="item-def">
+                <p class="item-def-text">BLACK LEATHER LOAFERS WITH...</p>
+            </a>
+            <div class="price-details">
+                <p class="model-no">Black - Ref.2605/520</p>
+                <p class="price">₹ 5,990.00</p>
+                <p class="item-size">UK 6 (EUR 40)</p>
+                    
+            </div>
+            <div class="item-quantity-tool">
+                <div class="minus"></div>
+                <div class="hr-after-minus"></div>
+                <div class="quantiy">
+                    <span class="total-quantity"></span>
+                </div>
+                <div class="plus"></div>
+                <div class="hr-before-plus"></div>
+            </div>
+
+
+            <div class="delete-button">
+                <span class="delete-text">delete</span>                
+            </div>
+        </div>  -->
+
+        <!-- <div class="items-widget">
+            <img src="/public/images/catalogue/shoe_one.jpg" alt="" class="item-image">
+            <a href="#" class="item-def">
+                <p class="item-def-text">BLACK LEATHER LOAFERS WITH...</p>
+            </a>
+            <div class="price-details">
+                <p class="model-no">Black - Ref.2605/520</p>
+                <p class="price">₹ 5,990.00</p>
+                <p class="item-size">UK 6 (EUR 40)</p>
+                <div class="item-quantity-tool">
+                    <div class="minus"></div>
+                    <div class="hr-after-minus"></div>
+                    <div class="quantiy">
+                        <span class="total-quantity"></span>
+                    </div>
+                    <div class="plus"></div>
+                    <div class="hr-before-plus"></div>
+                </div>   
+            </div>
+
+            <div class="delete-button">
+                <span class="delete-text">delete</span>
+            </div>
+        </div> -->
+<!-- 
+        <div class="items-widget">
+            <img src="/public/images/catalogue/shoe_one.jpg" alt="" class="item-image">
+            <a href="#" class="item-def">
+                <p class="item-def-text">BLACK LEATHER LOAFERS WITH...</p>
+            </a>
+            <div class="price-details">
+                <p class="model-no">Black - Ref.2605/520</p>
+                <p class="price">₹ 5,990.00</p>
+                <p class="item-size">UK 6 (EUR 40)</p>
+                <div class="item-quantity-tool">
+                    <div class="minus"></div>
+                    <div class="hr-after-minus"></div>
+                    <div class="quantiy">
+                        <span class="total-quantity"></span>
+                    </div>
+                    <div class="plus"></div>
+                    <div class="hr-before-plus"></div>
+                </div>   
+            </div>
+
+            <div class="delete-button">
+                <span class="delete-text">delete</span>
+            </div>
+        </div> -->
+
+        </div>
+
+        <div class="main-pop-up">
+            <div class="saving">
+                <p class="saving-text">Saving Changes...</p>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <footer class="sign-up-desktop">
+        <hr class="footer-sign-up">
+        <div class="main-footer-desktop">
+
+            
+
+            <div class="help-footer">
+                <h2 class="footer-heading">help</h2>
+                <ul class="help-list">
+                    <a href="#"><ol class="help-list-item">SHOP AT ZARA.COM</ol></a>
+                    <a href="#"><ol class="help-list-item">PRODUCT</ol></a>
+                    <a href="#"><ol class="help-list-item">PAYMENT</ol></a>
+                    <a href="#"><ol class="help-list-item">SHIPPING</ol></a>
+                    <a href="#"><ol class="help-list-item">EXCHANGES AND RETURNS</ol></a>
+                    <a href="#"><ol class="help-list-item">SHOPS AND COMPANY</ol></a>
+                    <a href="#"><ol class="help-list-item">MY ACCOUNT</ol></a>
+                </ul>
+            </div>
+
+            <div class="follow-us-footer">
+                <h1 class="footer-heading">follow us</h1>
+
+                <ul class="follow-us-list">
+                    <a href="#"><ol class="follow-us-list-item">newsletter</ol></a>
+                    <a href="#"><ol class="follow-us-list-item">instagram</ol></a>
+                    <a href="#"><ol class="follow-us-list-item">facebook</ol></a>
+                    <a href="#"><ol class="follow-us-list-item">twitter</ol></a>
+                    <a href="#"><ol class="follow-us-list-item">pinterest</ol></a>
+                    <a href="#"><ol class="follow-us-list-item">youtube</ol></a>
+                    
+                </ul>
+            </div>
+
+            <div class="company-footer">
+                <h1 class="footer-heading">follow us</h1>
+
+                <ul class="company-list">
+                    <a href="#"><ol class="company-list-item">about us</ol></a>
+                    <a href="#"><ol class="company-list-item">offices</ol></a>
+                    <a href="#"><ol class="company-list-item">stores</ol></a>
+                    <a href="#"><ol class="company-list-item">work with us</ol></a>
+                   
+                    
+                </ul>
+            </div>
+
+            <div class="policy-footer">
+                <h1 class="footer-heading">follow us</h1>
+
+                <ul class="company-list">
+                    <a href="#"><ol class="company-list-item">privacy policies</ol></a>
+                    <a href="#"><ol class="company-list-item">purchase condition</ol></a>              
+                   
+                    
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-sign-up">
+        <div class="secondary-footer-desktop">
+            <div class="country-sign-up">india</div>
+            <div class="language-and-copyright-sign-up">
+            <div class="sign-up-desktop-language">english</div>
+            <div class="copyright-sign-up">&copy All right reserved</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

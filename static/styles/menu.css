@@ -1,0 +1,406 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-style: 1rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif,Neue-Helvetica;
+    background: white;
+    /* color: whitesmoke; */
+}
+.navigation{
+    /* position: fixed; */
+    /* margin-bottom: 60px; */
+}
+.menu-main-container{
+    margin-left: 35px;
+    margin-top: 80px;
+    
+    height: 420px;
+    overflow-y: scroll;
+    /* display: none; */
+}
+
+.menu-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background: black;
+    /* display: block; */
+    transform: translateX(-100%);  
+   transition: ease 300ms; 
+
+    
+}
+
+.navigation-list-item{
+    margin-right: 17px;
+    margin-left: 21px;
+}
+
+.open{
+    visibility: visible;
+    background: black;
+    /* overflow: hidden; */
+    transform: translateX(0%);
+    transition: ease 300ms;
+}
+
+.navigation-lists{
+    display: flex;
+    font-size: 1.0rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    list-style: none;
+    /* justify-content: space-evenly; */
+    /* margin-right: 88px; */
+    /* background: red; */
+    width: 50%;
+    padding-left: 19px;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+.nav-list{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.active{
+    display: block;
+}
+
+.disable{
+    display: none;
+}
+.navigation-list-item.current{
+    font-weight: 600;
+}
+
+.navigation-close-button{
+    /* position: relative; */
+    /* bottom: 72px; */
+   
+    width: 25%;
+    left: 70%;
+}
+
+.close-button{
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    
+    background: white;
+    /* bottom: 72px; */
+    left: 84%;
+    top: 25px;
+    transform: rotate(45deg);    
+}
+
+.close-button::before{
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    
+    background: white;
+    bottom: 62px;
+    top: 35px;
+    left: 80%;
+}
+
+
+
+#close-button-help{
+    position: relative;
+    cursor: pointer;
+    text-align: -webkit-right;
+    margin-right: 15px;
+    bottom: 18px;
+
+  }
+  
+  #close-button{
+    /* position: absolute;
+    left: 88%; */
+    top: -6%;
+    margin-left: 320px;
+    margin-top: -23px;
+    cursor: pointer;
+  }
+  
+  #first-cross{
+    /* position: absolute; */
+    width: 23px;
+    height: 2px;
+    transform: rotate(135deg);
+    background: white
+  }
+  
+  #second-cross{
+    position: absolute; 
+   
+    width: 23px;
+    height: 2px;
+    /* top: 15px; */
+    transform: rotate(45deg);
+    background: white;
+    margin-top: -2px;
+  }
+
+
+h1{
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    line-height: 0.8;
+    margin-bottom: 17px;
+    
+}
+.collection-lists,
+.menu-stories
+{
+    display: grid;
+}
+
+.collection-lists-item,
+.menu-shoes-and-bags-item,
+.menu-stories-item,
+.join-life-item,
+.menu-info-item,
+.girl-item,
+.boy-item,
+.baby-girl-item,
+.baby-boy-item{
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    /* background: red; */
+    transition: linear 500ms;
+}
+
+.hidden{
+    
+    display: none;
+}
+
+.visully-hidden{
+    opacity: 0;
+}
+.collection-heading,
+.shoes-and-bags-heading,
+.stories-heading,
+.join-life-heading,
+.info-heading,
+.baby-boy-heading,
+.baby-girl-heading,
+.boy-heading,
+.girl-heading{
+    cursor: pointer;
+    text-align: left;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    line-height: 0.8;
+    margin-bottom: 17px;
+    margin-top: 0px;
+}
+
+.collection-lists-items,
+.menu-shoes-and-bags-items,
+.menu-stories-items,
+.join-life-items,
+.menu-info-items{
+    display: grid;
+}
+
+.menu-info{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.horizontal-line{
+    width: 80%;
+    position: fixed;
+    bottom: 82px;
+    /* margin-left: 2px; */
+}
+
+.menu-kids-subheading{
+    font-size: .8rem;
+    color: white;
+    font-weight: 400;
+    position: relative;
+    top: -12px;
+    /* margin-left: 126px; */
+}
+
+.menu-footer{
+    /* display: flex; */
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    /* margin-left: 35px; */
+    bottom: 96px;
+    /* height: 90px; */
+    overflow: hidden;
+    position: fixed;
+    /* margin-bottom: 150px; */
+}
+
+/* .menu-kids,
+.man-menu{
+    display: none;
+} */
+
+.menu-home-button{
+    /* width: 40%;
+    margin-left: 0px;
+    position: absolute; */
+    margin-top: 14px;
+    position: inherit;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.menu-my-account{
+    width: 50%;
+    margin-left: 153px;    
+    margin-top:13px;
+    position: inherit;
+    /* margin-bottom: 14px; */
+}
+.menu-my-account-text{
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.collection-lists-items,
+.menu-shoes-and-bags-items,
+.menu-stories-items,
+.join-life-items,
+.menu-info-items,
+.girl-items,
+.boy-items,
+.baby-girl-items,
+.baby-boy-items{
+    display: none;
+    /* opacity: 0;
+    transition: opacity 500ms; */
+    /* transition-timing-function: linear; */
+    
+}
+
+.stories-heading{
+    margin-bottom: 50px;
+}
+.menu-join-life{
+    margin-bottom: 50px;
+}
+
+.menu-info{
+    margin-bottom: 200px;
+}
+
+/* .navigation-list-item + .collection-lists .menu-stories{
+    display: none;
+} */
+
+/* // media queries */
+
+@media only screen and (min-width:992px){
+    .menu-container{
+        width: 40%;
+        background: white;
+      }
+      /* .navigation-lists{
+          display: block;
+      } */
+
+      .menu-main-container{
+          overflow-y: hidden;
+      }
+
+    .navigation-lists,
+    .collection-heading,
+    .shoes-and-bags-heading,
+    .stories-heading,
+    .join-life-heading,
+    .info-heading,
+    .baby-boy-heading,
+    .baby-girl-heading,
+    .boy-heading,
+    .girl-heading,
+    .menu-home-button,
+    .my-account-log-in{
+          color: black;
+      }
+      .collection-lists,
+      .menu-stories{
+          display: none;
+      }
+      
+      .menu-shoes-and-bags{
+          margin-top: 141px;
+      }
+      .navigation-lists{
+        font-weight: 600;
+        /* display: flex; */
+        flex-direction: column;
+        margin-top: 63px;
+        font-size: 2rem;
+        text-decoration: none;
+      }
+      .menu-shoes-and-bags{
+        margin-top: 123px;
+      }
+      .horizontal-line,
+      .menu-footer,
+      .girl-lists,
+      .boy-lists,
+      .baby-girl-lists,
+      .baby-boy-lists{
+          display: none;
+      }
+
+      .collection-lists-item,
+       .menu-shoes-and-bags-item,
+        .menu-stories-item,
+        .join-life-item,
+        .menu-info-item,
+        .girl-item, .boy-item,
+        .baby-girl-item, 
+        .baby-boy-item{
+            color: black;
+        }
+
+        /* .navigation-list-item + .collection-lists .menu-stories{
+            display: block;
+        } */
+
+        /* #women-lists-mobile,
+        #men-lists-mobile,
+        #men-lists,
+        #women-lists{
+            display: none;
+        } */
+
+        
+}
+

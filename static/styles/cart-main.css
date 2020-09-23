@@ -1,0 +1,310 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width:990px) {
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+    .navigation{
+        position: fixed;
+        top: -4px;
+        background: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    .help-logIn-container{
+        display: flex;
+        margin-top: 61px;
+        margin-right: 17px;
+    }
+    .item-image{
+        width: 226px;
+    }
+    .log-in-main,
+    .help-cart{
+        font-size: .8rem;
+        margin-left: 26px;
+    }
+
+    .logo-cart{
+        font-size: 6rem;
+        letter-spacing: -21px;
+    }
+    .home-logo:hover{
+        text-decoration: none;
+    }
+
+    .chatbot-cart{
+        height: 30px;
+        position: fixed;
+        bottom: 186px;
+        right: 0px;
+        border: 1px solid gray;
+        width: 51px;
+        font-size: .7rem;
+        background: white;
+    }
+
+    .chatbot-text{
+        text-align: center;
+    }
+    /* main segment */
+
+     .main-segment{
+         margin-top: 113px;
+         margin-bottom: 100px;
+     }
+
+     .total-items-count{
+        margin-left: 15%;
+        font-size: .9rem;
+        font-weight: 600;
+     }
+
+     .main-headline{
+        margin-left: 15%;
+        font-size: 1.5rem;
+     }
+    .widget-contaier{
+        display: flex;
+        margin-left: 15%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .item-def{
+        text-decoration: none;
+        color: black;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+    .item-def-text{
+        width: 100%;
+    }
+
+    .items-widget{
+        margin-right: 43px;
+    }
+
+    .model-no,
+    .price{
+        font-size: 0.7rem;
+        color: gray;
+        margin-top: -3px;
+    }
+    .item-size{
+        font-weight: 700;
+    }
+    .delete-text{
+        font-size: .6rem;
+        font-weight: 600;
+    }
+
+    .plus{
+        width: 15px;
+        height: 1px;
+        background: gray;
+        position: relative;
+        left: 60px;
+        top: 7px;
+    }
+
+    .plus::before{
+        content: '';
+        width: 15px;
+        height: 1px;
+        background: gray;
+        position: absolute;
+        /* top: -5px; */
+        left: 0px;
+        transform: rotate(90deg);
+    }
+
+    .total-quantity{
+        position: absolute;
+        margin-left: 31px;
+        font-size: .8rem;
+    }
+
+    .minus{
+        width: 15px;
+        background: gray;
+        position: relative;
+        height: 1px;
+        bottom: -9px;
+        left: 2px;
+        z-index: 0;
+    }
+
+    .hr-after-minus{
+        width: 20px;
+        height: 1px;
+        background: gray;
+        transform: rotate(90deg);
+        position: relative;
+        top: 8px;
+        left: 9px;
+    }
+
+    .hr-before-plus{
+        width: 21px;
+        height: 1px;
+        background: gray;
+        transform: rotate(90deg);
+        position: relative;
+        top: 6px;
+        left: 45px;
+    }
+
+    .item-quantity-tool{
+        background: white;
+        width: 77px;
+        height: 19px;
+        border: 1px solid gray;
+        margin-top: -4px;
+    }
+
+    .delete-button{
+        margin-top: 24px;
+    }
+    /* payment part */
+
+    .payment-summary{
+        position: fixed;
+        background: white;
+        bottom: 0px;
+        border-top: .1px solid gray;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;;
+        padding: 17px;
+        z-index: 1;
+    }
+
+    .goback-button,
+    .continue-button{
+        border: 1px solid black;
+        text-transform: uppercase;
+        width: 150px;
+        height: 45px;
+        font-weight: 700;
+        background: white;
+    }
+
+    .continue-button{
+        background: black;
+        color: white;
+    }
+
+    .total-payment-summary{
+        font-weight: 600;
+        font-size: 1.2rem;  
+        width:166px
+    }
+
+    .tax-text{
+        font-size: .5rem;
+        font-weight: 600;
+        text-align: center;
+        color: gray;
+    }
+
+    .delete-button:hover{
+        text-decoration: underline;
+    }
+/* footer part starts here */
+
+
+
+.sign-up-desktop{
+    background: white;
+}
+
+.main-footer-desktop{
+    display: flex;
+    margin: 19px 0% 41px 8%;
+}
+
+.footer-heading{
+    font-size: 1.2rem;
+    /* text-align: center; */
+    margin-left: 80px;
+}
+.help-list,
+.follow-us-list,
+.company-list,
+.company-list{
+    font-size: .9rem;
+}
+
+.help-list-item,
+.follow-us-list-item,
+.company-list-item,
+.company-list{
+    margin-bottom: 10px;
+}
+
+.secondary-footer-desktop{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.footer-sign-up{
+    width: 90%;
+    background: gray;
+}
+
+.country-sign-up{
+    margin-left: 8%;
+}
+
+.language-and-copyright-sign-up{
+    margin-right: 43px;
+}
+
+.sign-up-desktop-language{
+    margin-left: 109px;
+    margin-bottom: 24px;
+}
+
+.copyright-sign-up{
+    font-size: .7rem;
+    text-align: end;
+}
+
+.zara-site-bold{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+}
+
+.item-image,
+.log-in-main,
+.help-cart,
+.logo-cart,
+.item-def-text,
+.minus,
+.plus,
+.delete-button
+{
+    cursor: pointer;
+}

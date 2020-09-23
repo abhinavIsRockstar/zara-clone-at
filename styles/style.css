@@ -1,0 +1,633 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+    box-sizing: border-box;
+    /* box-sizing: border-box;    */
+    background-color: #ffffff;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+.carousel-container{
+  position: relative;  
+  /* height: 100%; */
+  overflow-x: scroll;
+  height: 625px;
+  /* background: aqua; */
+  /* scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.slide-track{
+  position: absolute;
+  width: 100%;
+}
+.man-carousel-slide,
+.woman-carousel-slide,
+.kids-carousel-slide{
+  position: absolute;
+  height: 100%;
+  scroll-snap-align: start;
+  /* padding-right: 30px; */
+}
+
+.man-carousel-slide{
+  margin-left: 1048px;
+  width: 100%;
+}
+
+.kids-carousel-slide{
+  margin-left: 2000px;
+    width: 100%;
+}
+
+#story-video{
+  position: absolute;
+    width: 100%;
+    margin-left: -274px;
+    margin-top: -220px;
+    /* z-index: -1; */
+    display: none;
+}
+
+.zara-logo-main{
+  font-size: 5rem;
+  font-weight: 3p00;
+  font-family:  Neue-Helvetica, Arial, sans-serif;
+  letter-spacing: -15px;
+  animation-name: logoAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  text-transform: uppercase;
+}
+
+@keyframes logoAnimation{
+  from {letter-spacing: -15px;}
+  to {letter-spacing: 20px;}
+
+ 
+}
+
+.heading-defintion-first-update,
+.heading-definition-second-update{
+  margin-bottom: 0;
+  color: black;
+}
+
+.logo-definition-animation{
+    text-transform: uppercase;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+}
+
+.nav-dots{
+  left: 87%;
+  position: fixed;
+  top: 39%;
+  z-index: 2;
+}
+.dot-item{
+  /* width: 5px;
+  height: 5px;
+  border-radius: 50%; */
+  position: relative;
+  top: 20px;
+  width: 5px;
+  height:4px;
+  color: black;
+  background: black;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin-left: -25px; */
+  right: 12px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.dot-item:hover{
+  background: white;
+  width: 7px;
+  height: 6px;
+  transition: ease .2s;
+}
+
+.dot-item-active {
+  background: white;
+  transition: ease .2s;
+}
+
+.dot-items{
+  list-style: none;
+}
+.heading-definition-second{
+    margin-top: 0;
+    color: white;
+}
+
+.heading-defintion-first{
+  margin-bottom: 0;
+  color: white;
+}
+
+.search-bar{
+  /* background: gray; */
+  width: 10%;
+  margin-left: 66%;
+  text-align: center;
+}
+
+.search-bar-icon{
+  width: 40%;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+.shopping-cart{
+    margin-top: 16px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.shopping-cart:hover + 
+.current-menu{
+  
+  font-weight: 600;
+}
+
+
+.burger-container{
+    /*   width:100%; */
+    /*   height:300px; */
+    position: relative;
+    cursor: pointer;
+    }
+    
+    .burger{
+      color: rgb(235, 219, 219);
+      width: 25px;
+      height: 1px;
+      top: 30px;
+      margin-left:20px;
+      position: relative;
+      background: black;
+    }
+    .burger::before{
+      content:'';      
+      width: 25px;
+      height: 1px;
+      top: -8px;
+      margin-left:0px;
+      position: absolute;
+      background: black;
+    }
+    
+    .burger::after{
+      content:'';      
+      width: 25px;
+      height: 1px;
+      top: 8px;
+      margin-left:0px;
+      position: absolute;
+      background: black;
+    }
+
+    .log-in-desktop{
+      text-decoration: none;
+      color: black;
+    }
+
+    .categories{
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      position: fixed;
+      bottom: 7px;
+      left: 26%;
+      z-index: 1;
+    }
+
+    .category-item{
+      text-decoration: underline;
+      color: black;
+      margin-left: 5px;
+    }
+
+
+    .animation-section,
+    .update-section,
+    .collection-section,
+    .shoes-and-bags-section,
+    .stories-section,
+    .join-life-section,
+    .join-our-newsletter{
+      height: 600px;
+      /* background: no-repeat url('../images/v0RWQyX.jpg'); */
+    }
+
+    .animation-section,
+    .update-container,
+    .collection-container,
+    .shoes-and-bags-container,
+    .join-life-container{
+      padding-top: 224px;
+    }
+
+    .animation-section{
+      text-align: center;
+      /* background: gray; */
+      /* position: absolute; */
+      margin-top: 67px;
+      height: 450px;
+    }
+
+    .collection-section{
+      background: no-repeat center url('../images/v0RWQyX.jpg');
+      
+    }
+
+    .collection-section-man{
+      background: no-repeat center url('../images/d1898838356051.575efb5a5865e.jpg');
+      height: 600px;
+      background-position-y: inherit;
+    }
+
+    .shoes-and-bags-section{
+      background: no-repeat center url('../images/Zara-Leaver-StanleysModelAgency-YoungFemaleFashionModel-London-UK7-Models.jpg');
+      background-position-y: top;
+    }
+
+    .shoes-and-bags-section-man{
+      background: no-repeat center url('../images/0a594e4b10c85aef509be7dcd419f5e1.jpg');
+      background-position-y: top;
+      height: 600px;
+    }
+
+    .stories-section{
+      background: no-repeat center url(../images/Zara-Women-Pantsuits-2019-Lookbook04.jpg);
+      background-position-y: top;
+      background-position-x: center;
+    }
+
+    .stories-section-man{
+      background: no-repeat center url('../images/3563abd9af702bcd398a35da78a11fa4.jpg');
+      background-position-y: top;
+      background-position-x: center;
+      height: 600px;
+    }
+
+    .join-life-section{
+      background: no-repeat center url('../images/Zara-Leaver-StanleysModelAgency-YoungFemaleFashionModel-London-UK12-Models.jpg');
+      background-position-y: top;
+    }
+
+    .join-life-section-man{
+      background: no-repeat center url('../images/CdvqdWJW0AARRLV.jpg');
+      background-position-y: top;
+      height: 600px;
+    }
+
+    .collection-section-kids{
+      background: no-repeat center url('../images/kids/000055930002_V2.jpg');
+      height: 600px;
+    }
+
+    .shoes-and-bags-section-kids{
+      background: no-repeat center url('../images/kids/5355bebb33c193335f9768fa2f9b291b.jpg');
+      background-position-y: top;
+      height: 600px;
+    }
+
+    .stories-section-kids{
+      background: no-repeat center url('../images/kids/8ca2b6fb85d2165d1109fdbe4c24d516.jpg');
+      /* background-position-y: top; */
+      height: 600px;
+    }
+
+    .join-life-section-kids{
+      background: no-repeat center url('../images/kids/8ca2b6fb85d2165d1109fdbe4c24d516.jpg');
+      /* background-position-y: top; */
+      height: 600px;
+    }
+
+
+
+    .main-join-life-heading,
+    .main-stories-heading,
+    .main-shoes-and-bags-heading,
+    .main-collection-heading{
+      text-align: center;
+  }
+  
+
+
+    h1{
+      font-size: 3rem;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: -5px;
+      margin-top: 0px;
+      color: white;
+    }
+
+    .view-button{
+      text-decoration: none;
+      color: white;
+      /* margin-top: 56px; */
+      position: relative;
+      text-transform: uppercase;
+    }
+
+    .update-view-button,
+    .collection-button,
+    .stories-button,
+    .join-life-button,
+    .shoes-and-bags-button{
+      /* background: gray; */
+      width: 105px;
+      height: 13px;
+      text-align: center;
+      position: relative;
+      margin: auto;
+      border: 1px solid white;
+      padding-top: 9px;
+      padding-bottom: 15px;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .heading-definiton,
+    .collection-definition,
+    .shoes-and-bags-definition,
+    .stories-definition{
+      font-size: 0.7rem;
+      font-weight: 400;
+      /* background: gray; */
+      width: 80%;
+      text-align: center;
+      margin-left: 94px;
+    }
+
+    .social-icons{
+      text-transform: uppercase;
+      font-size: .8rem;
+      font-weight: 500;
+      margin-top: 80px;
+      margin-left: 15px;
+      
+    }
+
+    .social-icon{
+      text-decoration: none;
+      color: black;
+      margin-left: 30px;
+    }
+
+    .newsletter-heading{
+      font-size: 1.6rem;
+      color: black;
+    }
+
+    .newsletter-container{
+      margin-top: 115px;
+    }
+
+    .social-icon-second-row{
+      margin-left: 42px;
+      margin-top: 8px;
+    }
+
+    .update-heading{
+      color: black;
+      line-height: 1.2;
+    }
+
+    .search-container,
+    .search-text,
+    .help-main-page-container,
+    .log-in-main-container{
+      display: none;
+     }
+
+     .arrow-down-svg{
+       display: none;
+     }
+     
+
+    
+
+   
+
+    /* media queries for diffetent screens apply here */
+
+
+    @media only screen and (min-width:992px){
+
+      .arrow-left-image{
+        width: 45px;
+        position: fixed;
+        top: 50%;
+        left: 3%;
+        cursor: pointer;
+      }
+
+      .arrow-right-image{
+        width: 45px;
+        position: fixed;
+        top: 50%;
+        left: 92%;
+        cursor: pointer;
+       }
+     
+
+      .carousel-container{
+        overflow-y: hidden;
+      }
+       .navigation{
+        width: 100%;
+        /* background: gray; */
+        position: fixed;
+        z-index: 1;
+        margin-top: 20px;
+       }
+
+       .help-main-page-container,
+       .log-in-main-container{
+          display: block;
+          font-size: .7rem;
+          font-weight: 400;
+          padding-top: 20px;
+          text-transform: uppercase;
+       }
+
+       .log-in-main-container{
+         display: block;
+         margin-left: 79%;
+       }
+
+       .search-container{
+        display: flex;
+        position: absolute;
+        /* margin-left: 420px; */
+        left: 42%;
+        top: 20%;
+       }
+       #search_main{
+        margin-top: 10px;
+        margin-left: 11px;
+        border-top: none;
+        border-bottom: 1px solid black;
+        border-left: none;
+        border-right: none;
+       }
+       .search-text{
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 600;
+        position: relative;
+        top: 6px;
+        text-transform: uppercase;
+       }
+       .search-bar{
+         display: none;
+       }
+
+       .nav-dots{
+         left: 92%;
+         top: 71%;
+       }
+
+       .log-in-main,
+       .help-main-page{
+         cursor: pointer;
+       }
+
+       
+
+       .categories{
+         display: none;
+       }
+
+       .arrow-down-svg{
+        display: block;
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        cursor: pointer;
+        z-index: 3;
+       }
+
+       .arrow-down-image{
+        width: 45px;
+        cursor: pointer;
+        position: absolute; 
+       }
+
+      .man-carousel-slide,
+      .woman-carousel-slide,
+      .kids-carousel-slide{
+         width: 100%;
+       }
+
+       .man-carousel-slide{
+         margin-left: 1348px;
+       }
+
+      .kids-carousel-slide{
+        margin-left: 2695px;
+      }
+
+       .collection-section,
+       .shoes-and-bags-section,
+       .stories-section,
+       .join-life-section{
+         height: 623px;
+       }
+
+       .collection-section{
+        background: no-repeat center url('../images/landscape_0.jpg');
+        
+      }
+
+      .shoes-and-bags-section{
+        background: no-repeat center url('../images/landscape_1.jpg');
+        /* background-position-y: top; */
+      }
+
+      .join-life-section{
+        background: no-repeat center url('../images/landscape_2.jpg');
+        /* background-position-y: top; */
+      }
+
+      .stories-section{
+        background: no-repeat center url('../images/landscape_2.jpg');
+        /* background-position-y: top;
+        background-position-x: center; */
+      }
+
+      .collection-section-kids{
+        background: no-repeat center url('../images/kids/kids_1.jpg');
+        /* height: 600px; */
+      }
+  
+      .shoes-and-bags-section-kids{
+        background: no-repeat center url('../images/kids/kids_2.jpg');
+        /* background-position-y: top; */
+        /* height: 600px; */
+      }
+  
+      .stories-section-kids{
+        background: no-repeat center url('../images/kids/kids3.jpg');
+        /* background-position-y: top; */
+        /* height: 600px; */
+      }
+  
+      .join-life-section-kids{
+        background: no-repeat center url('../images/kids/kids4.jpg');
+        /* background-position-y: top; */
+        /* height: 600px; */
+      }
+
+      .collection-section-man{
+        background: no-repeat center url('../images/man/man_1.jpg');
+        /* height: 600px;
+        background-position-y: inherit; */
+      }
+
+      .shoes-and-bags-section-man{
+        background: no-repeat center url('../images/man/man_2.jpg');
+        /* background-position-y: top;
+        height: 600px; */
+      }
+
+      .stories-section-man{
+        background: no-repeat center url('../images/man/man_3.jpg');
+        /* background-position-y: top; */
+        /* height: 600px; */
+      }
+
+      .join-life-section-man{
+        background: no-repeat center url('../images/man/man_4.jpg');
+        /* background-position-y: top; */
+        /* height: 600px; */
+      }
+
+      .social-icons{
+        display: flex;
+        margin-top: 176px;
+        margin-left: 28%;
+      }
+      .social-icon-second-row{
+        margin-top: 0px;
+      }     
+  
+    }

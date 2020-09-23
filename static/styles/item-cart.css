@@ -1,0 +1,359 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+@media only screen and (min-width:992px){
+li{
+    /* text-decoration: none; */
+    list-style-type: none;
+    font-size: .6rem;
+    font-weight: 400;
+}  
+.navigation-purchase{
+    /* background: gray; */
+    display: flex;
+    position: fixed;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.burger-container{
+    /*   width:100%; */
+    /*   height:300px; */
+    position: relative;
+    cursor: pointer;
+    margin-top: 21px;
+    /* margin: 18px 3px 0px -84px; */
+    }
+    
+    .burger{
+      color: rgb(235, 219, 219);
+      width: 25px;
+      height: 1px;
+      top: 30px;
+      margin-left:20px;
+      position: relative;
+      background: black;
+    }
+    .burger::before{
+      content:'';      
+      width: 25px;
+      height: 1px;
+      top: -8px;
+      margin-left:0px;
+      position: absolute;
+      background: black;
+    }
+    
+    .burger::after{
+      content:'';      
+      width: 25px;
+      height: 1px;
+      top: 8px;
+      margin-left:0px;
+      position: absolute;
+      background: black;
+    }
+
+    .item-container-item-image{
+        width: 80%;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+   .logo{
+        font-size: 6rem;
+        font-weight: 600;
+        letter-spacing: -20px;  
+
+        margin-left: 12px;
+    }
+
+    .search-container{
+        font-size: 1.2rem;
+        font-weight: 600;
+        position: absolute;
+        /* right: 197px; */
+        top: 40px;
+        left: 821px;
+    }
+
+    .log-in,
+    .help
+    {
+        font-size: .9rem;
+        font-size: 400;
+    }
+
+    .log-in,
+    .help,
+    .search-container,
+    .logo{
+        cursor: pointer;
+    }
+
+    .burger-logo-contaier{
+        display: flex;
+        z-index: 1;
+    }
+    .login-help-cart-container{
+        display: flex;
+        margin-top: 60px;
+        /* position: absolute;
+        left: 945px; */
+    }
+
+    .shopping-cart{
+        margin-left: 15px;
+    }
+
+    .help{
+        margin-left: 20px; 
+    }
+
+    .search-text{
+        position: absolute;
+        top: 36%;
+        right: 2px;
+        right: 105%;
+    }
+    .search-input{
+        border: none;
+        border-bottom: 1px solid black;
+        height: 33px;
+        width: 118px;
+        outline: none;
+    }
+    /* catalogues styles */
+
+    .catologue,
+    .catagories,
+    /* .catagories-lists, */
+    .view{
+        display: flex;
+    }
+
+    .catagories{
+        width: 55%;
+        margin-left: 240px;
+    }
+
+    .catagories-slider{
+        width: 85%;
+        /* background: pink; */
+        overflow-y: hidden;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        /* overflow: hidden; */
+    }
+    .catagories-lists{
+        /* background: orange; */
+        margin-top: 4px;
+        display: flex;
+        width: 971px;
+        cursor: pointer;
+    }
+
+    .catagories-list-item{
+        width: 114px;
+    }
+
+    .view-options{
+        margin-left: 52px;
+    }
+    .view-option{
+        margin-right: 8px;
+
+    }
+
+    .view-all{
+        text-decoration: underline;
+    }
+
+    .filters{
+        margin-left: 29px;
+        font-size: .7rem;
+
+    }
+
+    .arrow-left,
+    .arrow-right,
+    .filters,
+    .item-main{
+        cursor: pointer;
+    }
+
+    .arrow-right-container{
+        margin-left: 9px;
+    }
+    .arrow-left-container{
+        margin-right: 9px;
+    }
+
+    /* for widget item  */
+
+    .headline-announcement{
+        width: 60%;
+        font-size: .8rem;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .item-main{
+        width: 40%;
+        margin-left: 31%;
+    }
+
+    .item-price-detail{
+        font-size: .7rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .item-price-detail a:hover{
+        text-decoration: underline;
+    }
+
+    .item-container{
+        width: 65%;
+        position: absolute;
+        overflow: auto;
+        top: 0px;
+        z-index: -1;
+    }
+
+    /* item custom details */
+    .item-custom-details{
+        width: 30%;
+        position: absolute;
+        right: 40px;
+        top: 148px;
+        z-index: -1;
+    }
+
+    .item-detail-text{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: -11px;
+    }
+
+    .item-price{
+        margin-bottom: 2px;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .total-items{
+        position: absolute;
+        top: 47px;
+        right: 6px;
+        font-weight: 600;
+        color: black;
+    }
+
+    .item-price-standard{
+        font-size: .6rem;
+        color: gray;
+    }
+
+    .item-model-no-and-details{
+        font-size: .9rem;
+        margin-top: 4px;
+    }
+    .item-full-detail{
+        width: 100%;    
+        /* background: gray; */
+        overflow: hidden;
+        height: 33px;
+        margin-top: 5px;
+        text-transform: initial;
+        transition: ease .2s;
+        
+    }
+
+    .view-less{
+        margin-top: 6px;
+        font-size: .6rem;
+        cursor: pointer;
+    }
+
+    .size-guide-list-item{
+        font-size: .9rem;
+        margin-bottom: 13px;
+        margin-left: -35px;
+        margin-top: 14px;
+        cursor: pointer;
+    }
+
+    .current-clicked{
+        font-weight: 600;
+    }
+
+    .disable{
+        font-weight: 400;
+    }
+
+    .size-guide-list{
+        overflow-y: auto;
+        height: 167px;
+        margin-top: -9px;
+        margin-bottom: -6px;
+    }
+    .size-guide-hr{
+        border: 1px solid;
+    }
+
+    .size-guide-pop-up{
+        text-align: end;
+        font-size: .6rem;
+    }
+
+    .size-guide-button{
+    width: 333px;
+    height: 38px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    /* font-size: 1rem; */
+    font-weight: 600;
+    margin-top: 14px;
+    border: none;
+    }
+
+    .items-customs-pop-up{
+        margin-left: -23px;
+        margin-top: 32px;
+    }
+
+    .item-customs-pop-up{
+        font-size: .7rem;
+        list-style: disc;
+        margin-bottom: 12px;
+    }
+
+    .item-customs-pop-up:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .chatbot{
+        padding-top: 6px;
+        width: 71px;
+        height: 20px;
+        /* background: gray; */
+        position: fixed;
+        bottom: 40px;
+        right: 8px;
+        font-size: .8rem;
+        text-align: center;
+        border: 1px solid gray;
+    }
+}
