@@ -26,6 +26,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.set('view engine', 'ejs');
 app.use(express.json())
 console.log(__dirname,'dirname');
+
+const port = process.env.PORT || 3000
 app.get('/', (req,res) => {
     //console.log(req);
     // console.log(res);
@@ -465,6 +467,6 @@ databaseConnection.connect( (err) => {
 //   });
 
 
-app.listen('3000', () => {
+app.listen(port, () => {
     console.log('server started on port 3000')
 });
