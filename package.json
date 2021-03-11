@@ -2,7 +2,10 @@
   "name": "zara_clone",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "engine":{
+    "node": "v14.15.4"
+  },
+  "main": "node index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.2",

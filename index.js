@@ -361,7 +361,8 @@ const databaseConnection = mysql.createConnection({
     host:'localhost',
     user: 'root',
     password:'Abhi9avTiwari',
-    database: 'eshop'
+    database: 'eshop',
+    
     
 });
 
